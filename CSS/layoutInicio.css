@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -7,65 +8,420 @@
 header{
     width: 100%;
     height: 50px;
-    background-color: brown;
+    background-color: #684838
 }
 
 #menu{
     width: 80vw;
-    height: 50px;
+    height: 3vw;
     margin: auto;
-    background-color: aqua;
+    background-color: #684838;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+/* Estrutura base da section falando sobre a loja */
 
 #quem_somos{
     width: 100%;
-    height: 600px;
-    background-color: chocolate;
+    height: auto;
+    background-color: #684838;
 }
 
 #containerQS{
     width: 80vw;
-    height: 600px;
+    height: auto;
     margin: auto;
-    background-color: blueviolet;
+    background-color: #684838;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
 }
+
+/* fazendo o desing Menu */
+
+.AjtMenu{
+    color: white;
+    text-decoration: none;
+    font-size:larger;
+    
+}
+
+.AjtMenu:hover{
+    color: #f96287;
+}
+
+
+/* Desing Quem Somos titulo,img e texto, */
+
+#Titulosection1{
+    font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 5vw;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    margin-top: 70px;
+    
+}
+
+#ImgLogo{
+    height: 15vw;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-top: 40px; 
+}
+
+#PosicaoTextoSec1{
+    grid-column: 3 / 5;
+    grid-row: 3 / 6;
+    color: white;
+    text-align:justify;
+    font-size: 2vw;
+    /* margin-top: 310px; */
+}
+
+#FotoDonaEstabelecimento{
+    width: 27vw;
+    grid-column: 10 / 12;
+    grid-row: 1 / 6;
+    border-radius: 60px;
+    margin-top: 100px;
+    
+    
+}
+
+
+/*  Chocolate derretendo esta entre as section quem somos mais vendidos */
+
+#ChocoDerretendo{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    
+}
+
+/* Desing Mobile section Sobre*/
+
+@media screen and (max-width: 767px){
+    #containerQS{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    }
+.AjtMenu{
+    margin: auto;
+}
+    
+   #FotoDonaEstabelecimento{
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        margin-top: 50px;
+        /* margin-left: 30px; */
+        margin-bottom: 0;
+        width: 60vw;
+        
+    }
+
+    #ImgLogo{
+    height: 28vw;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-top: 50px; 
+    /* margin-left: 30px; */
+}
+
+    #Titulosection1{
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        margin-top: 50px;
+        font-size: 10vw;
+    }
+
+    #PosicaoTextoSec1{
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        margin-top: 39vw;
+        /* margin-left: 10px; */
+        font-size: 5vw
+    }
+}
+
+/*  Estrutura base da sectio 2  */
+
 
 #mais_vendidos{
     width: 100%;
-    height: 800px;
-    background-color: crimson;
+    height: auto;
+    /* background-color: rgb(223, 40, 40); */
 }
 
 #containerMV{
     width: 80vw;
-    height: 800px;
+    height: auto;
     margin: auto;
-    background-color: cornflowerblue;
+    /* background-color: rgb(12, 187, 79); */
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+
+} 
+
+
+
+/* Desing section 2 Mais vendido */
+
+/* Aqui coloque um conteiner para o granulado */
+#ConteGranulado{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
 }
+
+#TituloMv{
+    font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 100px;
+    grid-column: 2/3;
+    grid-row: 6/6;
+}
+
+/* Conteiner para os produtos mais vendidos repetir isso 3 vezes*/
+
+.ContFotoMv1{
+    /* background-color: aqua; */
+    width: 299px;
+    height: 400px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+    grid-column: 3/5;
+    grid-row: 1/5;
+    margin-top: 60px;
+}
+/* botão comprar */
+.BotaoMv1{
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: #84d6a0;
+     margin: 10px 0 0 100px;
+     
+}
+.FotoProdMv1{
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.TxtMaisVendido1{
+    margin: 0 0 0 80px;
+}
+
+.ContFotoMv2{
+    /* background-color: aqua; */
+    width: 299px;
+    height: 400px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+    grid-column: 6/8;
+    grid-row: 1/5;
+    margin-top: 60px;
+}
+
+.BotaoMv2{
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: #84d6a0;
+     margin: 10px 0 0 100px;
+}
+.FotoProdMv2{
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.TxtMaisVendido2{
+    margin: 0 0 0 80px;
+}
+
+.ContFotoMv3{
+    /* background-color: aqua; */
+    width: 299px;
+    height: 400px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+    grid-column: 9/11;
+    grid-row: 1/5;
+    margin-top: 60px;
+}
+
+.BotaoMv3{
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: #84d6a0;
+     margin: 10px 0 0 100px;
+}
+.FotoProdMv3{
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.TxtMaisVendido3{
+    margin: 0 0 0 80px;
+}
+
+/* Linha verde  */
+
+/* !! Não consegui !! */
+
+#contTracosVerd{
+    margin: auto;
+    /* background-color: bisque;  */
+    width: 1190px;
+    height: 40px;
+    /* display: grid;
+    gap: 1px; */
+    /* grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6,auto); */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.TracosVerd{
+    width: 80px;
+    background-color:#84d6a0;
+}
+
+/*Modelo Mobile Section 2 Mais vendidos  */
+
+@media screen and (max-width: 767px){
+    #containerMV{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    }
+
+    #TituloMv{
+        grid-column: 7/7;
+        /* grid-row: 6 / 6; */
+        font-size: 14vw;
+        margin: 0 0 0 60px;
+    }
+
+    .ContFotoMv1{
+        grid-column: 4/5;
+        grid-row: 1/1;
+        margin: 0 0 0 10px
+    }
+
+    .ContFotoMv2{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 50px 0 0 10px;
+    }
+
+    .ContFotoMv3{
+        grid-column: 4/5;
+        grid-row: 5/6;
+        margin: 50px 0 0 10px;
+    }
+
+    .TracosVerd{
+    margin: 0 0px 0 130px;
+    width: 10vw;
+    height: 1vw;
+    background-color:#84d6a0;
+}
+
+}
+
+/* Estruttura base da section depoimento */
 
 #depoimento{
     width: 100%;
     height: 600px;
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
 }
 
 #containerDep{
     width: 80vw;
     height: 600px;
     margin: auto;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
+}
+
+
+
+/* Desing Depoimento */
+
+
+#FotoDepoimento{
+    width: 18vw;
+    grid-column: 4/5;
+    grid-row: 2/5;
+}
+
+#TituloDep{
+    font-size: 4vw;
+    grid-column: 6/7;
+    grid-row: 2/2;
+    
+}
+
+#txtDep{
+    grid-column: 6/9;
+    grid-row: 3/4;
+    /* margin-top: 6vw; */
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px){
+     #containerDep{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    }
+
+    #FotoDepoimento{
+    padding-top: 20px;
+    width: 50vw;
+    grid-column: 4/4;
+    grid-row: 2/3;
+    
+}
+
+#TituloDep{
+    font-size: 8vw;
+    grid-column: 4/4;
+    grid-row: 3/3;
+    
+}
+
+#txtDep{
+    padding-top: 20px;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin-top: 6vw;
+    text-align: justify;
+}
 }
 
 #carrosel{
@@ -100,4 +456,8 @@ footer{
     gap: 5px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
+}
+
+#ImgLogoFoot{
+    width: 150px;
 }
