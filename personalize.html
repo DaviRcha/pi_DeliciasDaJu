@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/layoutPersonalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <header>
+        <div id="imglogo">
+            <img id="AjtImg" src="./IMG/logo.png" alt="Logo da marca">
+        </div>
+        <nav id="menu">
+           <a class="AjtMenu" href="./index.html">&nbsp;Sobre &nbsp;</a>|&nbsp
+            <a class="AjtMenu" href="./produtos.html">&nbsp;Produtos &nbsp;</a>|&nbsp
+            <a class="AjtMenuP" href="">&nbsp;Personalize &nbsp;</a>&nbsp
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <section id="banner">
+            <!-- Titulo do banner -->
+            <div id="containerBanner">
+                <h1 id="TituBanner">Bolos</h1>
+            </div>
+        </section>
+
+        <section id="exe_personalização">
+            <div id="containerExePersForm">
+                
+
+                    <!-- titulo da section personalização -->
+                <h2 id="TxtExe">Exemplo de Personalização</h2>
+
+                    <!-- Quadrado que guarda o 1 exemplo -->
+
+                <div id="ContExem1">
+                    <div class="ContExplExem">
+                        <h3 class="TxtExplicExem">Bolo 30 anos</h3>
+                    </div>
+                    
+                      <img id="Bol30" src="./IMG/bolo30.png" alt="Exemplo de um bolo personalizado com um formato de um bolo de 30 anos">
+                </div>
+                    <!-- Quadrado que guarda o 2 exemplo -->
+                <div id="ContExem2">
+
+                    <div class="ContExplExem">
+                        <h3 class="TxtExplicExem">Bolo Harry Potter</h3>
+                    </div>
+
+                      <img id="BolHp" src="./IMG/boloHP.png" alt="Exemplo de um bolo personalizado decorado com Harry Potter">
+                </div>
+                    <!-- Quadrado que guarda o 3 exemplo -->
+
+                <div id="ContExem3">
+                    <div class="ContExplExem">
+                        <h3 class="TxtExplicExem">Bolo palmeiras</h3>
+                    </div>
+                      <img id="BolPal" src="./IMG/Bolopalmeiras - Copia.png" alt="Exemplo de um bolo personalizado decorado com palmeras">
+                    </div>
+
+                    <!-- Titulo entre em contato -->
+
+                        <h2 id="EntrCont">Entre em Contato</h2>
+
+                        <!-- Formulario nome -->
+                    <form id="FormNome" method="post" action="">
+                        <label for="Nome"></label>
+                        <input id="Nome" type="text" name="Nome do cliente" placeholder="Nome">
+                    </form>
+                        <!-- Formulario email -->
+                    <form id="FormEmail" method="post" action="">
+                        <label for="Email"></label>
+                        <input id="Email" type="email" name="Email do cliente" placeholder="Email">
+                    </form>
+                     <!-- Formulario email -->
+                    <form id="FormTele" method="post" action="">
+                        <label for="Telefone"></label>
+                        <input id="Telefone" type="tel" name="Telefone do cliente" placeholder="Telefone">
+                    </form> 
+                    <!-- Area de texto -->
+                     <textarea name="MsgClie" id="MsgClie" placeholder="Mensagem" ></textarea>
+                     <!--Botao para enviar  -->
+                     <button type="submit" id="BotEnv" >Enviar</button>
+            </div>  
+        </section>
+    </main>
+
+    <footer>
+         <div id="containerRodapeProd">
+            <img id="LogoM" src="./IMG/logo.png" alt="Logo da loja">
+            
+            <h3 id="TxtRodape">Aberto de segunda a sexta |<a id="LinkInsta" href="https://www.instagram.com/d.liciasdaju?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@d.liciasdaju</a></h3>
+
+            <!-- <a id="LogoIns" href="https://www.instagram.com/d.liciasdaju?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <img id="LogoIns" src="./IMG/LogoIntagram.png" alt="Logo do instagram">
+            </a> -->
+            
+        </div>
+    </footer>
+</body>
+</html>

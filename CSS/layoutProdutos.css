@@ -1,0 +1,1025 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #84d6a0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#menu{
+    background-color: #84d6a0;
+    width: 1220px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#AjtImg{
+    height: 70px;
+}
+
+/* Fazendo o menu */
+
+.AjtMenu{
+    color: white;
+    text-decoration: none;
+    font-size: 1.9vw;
+    
+}
+
+.AjtMenuP{
+     color: white;
+    text-decoration: none;
+    font-size: 1.9vw;
+    margin-right: 4vw;
+}
+
+.AjtMenu:hover{
+    color: #f96287;
+}
+
+.AjtMenuP:hover{
+    color: #f96287;
+}
+
+@media screen and (max-width: 767px){
+   .AjtMenu{
+    color: white;
+    text-decoration: none;
+    font-size: 4.5vw;
+    
+} 
+.AjtMenuP{
+     color: white;
+    text-decoration: none;
+    font-size: 4.5vw;
+    margin-right: vw;
+}
+}
+
+
+#doces{
+    width: 100%;
+    height: 900px;
+    /* background-color: chartreuse; */
+    background-image: url(/IMG/FundoProdutos.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(6, auto);
+    
+}
+
+
+
+/* Fazendo a section dos doces */
+
+#TituloDoces{
+     font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 8vw;
+    margin: auto;
+    grid-column: 6/9;
+    grid-row: 2/3;
+    margin-left: 3vw;
+}
+
+.ProdutosDoces1{
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    grid-column: 2/5;
+    grid-row: 3/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+} 
+
+.ProdutosDoces2{
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    grid-column: 5/8;
+    grid-row: 3/7;
+     display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+} 
+
+.ProdutosDoces3{
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    grid-column: 8/11;
+    grid-row: 3/7;
+      display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+} 
+
+.ProdutosDoces4{
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    grid-column: 11/13;
+    grid-row: 3/7;
+      display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+} 
+
+/* Foto dos produtos doce */
+
+#FotoBoloDePot{
+    width: 15vw;
+    grid-column: 1/8;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 2.8vw;
+
+}
+
+#FotoCookie{
+    width: 11vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 2vw;
+
+}
+
+#FotoDocinhos{
+    width: 15vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#FotoBrownie{
+    width: 13vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Texto e botoes para os produtos da parte do doce */
+
+#ajth3{
+    /* background-color: aqua;  */
+    width: 100%;
+    height: auto;
+    grid-column: 1/8;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BoloDePote{
+    /* margin: 0 0 0 48%; */
+    font-size: 2.2vw;
+    grid-column: 2/8;
+    grid-row: 4/5;
+    /* margin-left: 2vw;
+    margin-top: 20px; */
+}
+
+#TituCookie{
+     font-size: 2.5vw;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    /* margin-left: 0.5vw;  */
+    margin-top: 20px;
+}
+
+#TituDocinhos{
+     font-size: 2.5vw;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    /* margin-left: 25px;  */
+    margin-top: 20px;
+}
+
+#TituBrownie{
+     font-size: 2.5vw;
+    grid-column: 3/7;
+    grid-row: 4/5;
+    /* margin-left: 25px;  */
+    margin-top: 20px;
+}
+
+#ajtbotao{
+    /* background-color: aqua; */
+    width: 100%;
+    grid-column: 1/8;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+}
+
+.BotCompreDoces{
+    grid-column:2/7 ;
+    grid-row: 5/6;
+    width: 12vw;
+    height: 4vw;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    background-color: #84d6a0;
+    box-shadow:-3px 3px 5px 0.5px #1c8a51; ;
+    /* margin-left: 2vw; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.BotCompreDoces:hover{
+    background-color: #26412f;
+}
+
+.TxtCompre{
+    font-size: 2vw;
+}
+
+/* Modelo mobile da section doce  */
+
+@media screen and (max-width: 767px){
+    #doces{
+        height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 1px;
+    height: auto;
+    }
+
+    #TituloDoces{
+     font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 12vw;
+    margin: auto;
+    grid-column: 1/4;
+    grid-row: 2/2;
+    margin-left: 35vw;
+    margin-top: 10vw;
+}
+
+    .ProdutosDoces1{
+    background-color: white;
+    width: 40vw;
+    height: 52vw;
+    grid-column: 1/3;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 4vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-top: 25vw;
+    margin-left: 9vw;
+} 
+
+.ProdutosDoces2{
+    background-color: white;
+   width: 40vw;
+    height: 52vw;
+    grid-column: 3/6;
+    grid-row: 2/5;
+     display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 4vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-top: 25vw;
+    margin-left: 4vw;
+
+} 
+
+.ProdutosDoces3{
+    background-color: white;
+    width: 40vw;
+    height: 52vw;
+    grid-column: 1/3;
+    grid-row: 5/7;
+      display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 4vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-top: 6vw;
+     margin-left: 9vw;
+} 
+
+.ProdutosDoces4{
+    background-color: white;
+    width: 40vw;
+    height: 52vw;
+    grid-column: 3/5;
+    grid-row: 5/7;
+      display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 4vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-left: 4vw;
+    margin-top: 6vw;
+} 
+
+#FotoBoloDePot{
+    width: 30vw;
+    grid-column: 1/8;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 5.8vw;
+
+}
+
+#FotoCookie{
+    width: 25vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 2vw;
+
+}
+
+#FotoDocinhos{
+    width: 28vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#FotoBrownie{
+    width: 28vw;
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#BoloDePote{
+    /* margin: 0 0 0 48%; */
+    font-size: 4.2vw;
+    grid-column: 2/8;
+    grid-row: 4/5;
+    /* margin-left: 2vw;
+    margin-top: 20px; */
+}
+
+#TituCookie{
+     font-size: 4.5vw;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    /* margin-left: 0.5vw;  */
+    margin-top: 20px;
+}
+
+#TituDocinhos{
+     font-size: 4.5vw;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    /* margin-left: 25px;  */
+    margin-top: 20px;
+}
+
+#TituBrownie{
+     font-size: 4.5vw;
+    grid-column: 3/7;
+    grid-row: 4/5;
+    /* margin-left: 25px;  */
+    margin-top: 20px;
+}
+
+#ajtbotao{
+    /* background-color: aqua; */
+    width: 100%;
+    grid-column: 1/8;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+}
+
+.BotCompreDoces{
+    grid-column:2/7 ;
+    grid-row: 5/6;
+    width: 16vw;
+    height: 8vw;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    background-color: #84d6a0;
+    box-shadow:-3px 3px 5px 0.5px #1c8a51; ;
+    /* margin-left: 2vw; */
+    color: black;
+}
+
+.TxtCompre{
+    font-size: 3vw;
+}
+     
+}
+
+#salgados{
+    width: 100%;
+    height: 900px;
+    /* background-color: brown; */
+}
+
+#containerSalg{
+    width: 80vw;
+    height: 900px;
+    margin: auto;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/* Fazendo asection Salgados */
+/* Titulo da section */
+#TituloSalg{
+    font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 7vw;
+    grid-column: 5/9;
+    grid-row: 1/1;
+    margin-left: 3vw;
+}
+
+/* Quadrados que guarda os produtos */
+
+#ProdutoSalg1{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 1/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-top: 1vw;
+}
+
+#contNomeProd{
+    width: 100% ;
+    height: 55px;
+    /* background-color: aqua; */
+    grid-column: 1/8;
+    grid-row: 4/5 ;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+}
+
+#TorFran{
+    grid-column: 2/8;
+    grid-row: 1/4;
+    width: 18vw;
+    height: auto;
+    margin-top: 2vw;
+}
+
+#TituTorFrango{
+    font-size: 2vw;
+}
+
+/* Conteiner produto 2 */
+
+#ProdutoSalg2{
+     width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 5/10;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-left: 4vw;
+    margin-top: 1vw;
+}
+
+/* Imagem do produto 2 */
+#TorPalmito{
+    width: 18vw;
+    height: auto;
+    grid-column: 2/8;
+    grid-row: 1/4;
+    margin-top: 2vw;
+}
+
+/* Titulo falndo oqué o produto */
+
+#TituTorPalmito{
+    font-size: 2vw;
+}
+
+/* Conteiner d produto 3 */
+
+#ProdutoSalg3{
+     width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 10/13;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+     border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+/* imagem do produto 3 */
+#TorCalabresa{
+    width: 15vw;
+    height: auto;
+     grid-column: 2/8;
+    grid-row: 1/4;
+    margin-top: 1vw;
+}
+
+#TituTorCalab{
+    font-size: 2vw;
+}
+
+/* Modelo mobile da section Salgados */
+
+@media screen and (max-width: 767px){
+
+    #salgados{
+    width: 100%;
+    height: auto;
+    /* background-color: brown; */
+}
+
+    #containerSalg{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+
+    #TituloSalg{
+        grid-column: 2/6;
+        grid-row: 1/1;
+        margin-top: 3vw;
+        font-size: 13vw;
+        margin-left: 2vw;
+    }
+    #ProdutoSalg1{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-top: 30vw;
+         border-radius: 4vw;
+    }
+
+    #ProdutoSalg2{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 3/6;
+        grid-row: 1/3;
+        margin-top: 30vw;
+        border-radius: 4vw;
+    }
+
+    #ProdutoSalg3{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 2/7;
+        grid-row: 2/5;
+        margin-left: 2vw;
+        margin-top: 40vw;
+        border-radius: 4vw;
+        
+    }
+/* Imagem do produto 1 mobile */
+    #TorFran{
+        width: 32vw;
+    }
+/* Titulo falndo oque é o produto 1 mobile */
+    #TituTorFrango{
+    font-size: 4vw;
+}
+
+/* Imagem do produto 2 mobile */
+    #TorPalmito{
+    width: 30vw;
+    height: auto;
+    grid-column: 2/8;
+    grid-row: 1/4;
+    margin-top: 5vw;
+    }
+
+/* Titulo falndo oque é o produto 2 mobile */
+
+    #TituTorPalmito{
+    font-size: 4vw;
+    }
+
+/* imagem do produto 3 mobile */
+#TorCalabresa{
+    width: 28vw;
+    height: auto;
+     grid-column: 2/8;
+    grid-row: 1/4;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+/* Titulo falndo oque é o produto 2 mobile */
+#TituTorCalab{
+    font-size: 4vw;
+}
+}
+
+#fundoKits{
+    width: 100%;
+    height: 1100px;
+    background-color: crimson; 
+    background-image: url(/IMG/FundoKits.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+
+#containerKits{
+    width: 80vw;
+    height: 600px;
+    margin: auto;
+    /* background-color: blueviolet;  */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/* Fazendo a section Kits */
+
+/* Titulo da Pagina */
+
+#TituloKits{
+    font-family: "Sevillana", cursive;
+    color: #f96287;
+    font-size: 7vw;
+    grid-column: 6/8;
+    grid-row: 1/1;
+    margin-left: 1vw;
+    
+}
+
+/* Quadrado que guarda Kit Pequeno  */
+
+#ProdutoKitP{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 1/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-top: 1vw;
+}
+
+#contNomeProd{
+    width: 100% ;
+    height: 55px;
+    /* background-color: aqua; */
+    grid-column: 1/8;
+    grid-row: 4/5 ;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+}
+
+#ImgKitP{
+    grid-column: 2/8;
+    grid-row: 1/4;
+    width: 12vw;
+    height: auto;
+    margin-left: 1vw;
+}
+
+#TituKitP{
+    font-size: 2vw;
+}
+
+/* Quadrado que guarda o Kit Medio */
+
+#ProdutoKitM{
+     width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 5/10;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-left: 4vw;
+    margin-top: 1vw;
+
+    
+}
+
+#contNomeProd{
+    width: 100% ;
+    height: 55px;
+    /* background-color: aqua; */
+    grid-column: 1/8;
+    grid-row: 4/5 ;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+}
+
+#ImgKitM{
+    grid-column: 2/8;
+    grid-row: 1/4;
+    width: 12vw;
+    height: auto;
+    margin-left: 1vw;
+}
+
+#TituKitM{
+    font-size: 2vw;
+}
+
+/* Quadrado que guarda o kit grande */
+
+#ProdutoKitG{
+     width: 20vw;
+    height: 25vw;
+    background-color: white;
+    grid-column: 10/13;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 2vw;
+    box-shadow: -3px 1px 5px 1px #8f8989;
+    margin-left: 2vw;
+    margin-top: 1vw;
+
+    
+}
+
+#contNomeProd{
+    width: 100% ;
+    height: 55px;
+    /* background-color: aqua; */
+    grid-column: 1/8;
+    grid-row: 4/5 ;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+}
+
+#ImgKitG{
+    grid-column: 2/8;
+    grid-row: 1/4;
+    width: 10vw;
+    height: auto;
+    margin-left: 2vw;
+}
+
+#TituKitG{
+    font-size: 2vw;
+}
+
+
+
+/* Fazendo a versao mobile da section kits */
+
+@media screen and (max-width: 767px){
+
+    #fundoKits{
+    width: 100%;
+    height: 1300px;
+    /* background-color: brown; */
+}
+
+    #containerKits{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+
+    #TituloKits{
+        grid-column: 2/5;
+        grid-row: 1/1;
+        margin-top: 3vw;
+        font-size: 13vw;
+        margin-left: 11vw;
+    }
+    #ProdutoKitP{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-top: 30vw;
+        border-radius: 4vw;
+    }
+
+    #ProdutoKitM{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 3/6;
+        grid-row: 1/3;
+        margin-top: 30vw;
+        border-radius: 4vw;
+    }
+
+    #ProdutoKitG{
+        width: 40vw;
+        height: 50vw;
+        grid-column: 2/7;
+        grid-row: 2/5;
+        margin-left: 2vw;
+        margin-top: 40vw;
+        border-radius: 4vw;
+        
+    }
+/* Imagem do produto 1 mobile */
+    #ImgKitP{
+        width: 25vw;
+        grid-column: 2/7;
+    }
+/* Titulo falando oque é o produto 1 mobile */
+    #TituKitP{
+    font-size: 4vw;
+}
+
+/* Imagem do produto 2 mobile */
+    #ImgKitM{
+    width: 25vw;
+    height: auto;
+    grid-column: 2/8;
+    grid-row: 1/4;
+    margin-left: 2vw;
+    }
+
+/* Titulo falndo oque é o produto 2 mobile */
+
+    #TituKitM{
+    font-size: 4vw;
+    }
+
+/* imagem do produto 3 mobile */
+#ImgKitG{
+    width: 20vw;
+    height: auto;
+     grid-column: 2/8;
+    grid-row: 1/4;
+    margin-top: 1vw;
+    margin-left: 4vw;
+}
+/* Titulo falndo oque é o produto 2 mobile */
+#TituKitG{
+    font-size: 4vw;
+}
+}
+
+#kits{
+    width: 100%;
+    height: 900px;
+    /* background-color: crimson; */
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #84d6a0; 
+}
+
+#containerRodapeProd{
+    width: 80vw;
+    height: 400px;
+    margin: auto;
+    background-color: #84d6a0;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#LogoM{
+    width: 8vw;
+    height: auto;
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+.ContTxtRod{
+ width: 100%;
+    height: 20px;
+    /* background-color: aqua; */
+    grid-column: 1/13;
+    grid-row: 6/6;
+    display: flex;
+    justify-content: center;
+}
+
+/* #TxtRodape{
+    grid-column: 5/9;
+    grid-row: 6/6;
+}  */
+
+#LinkInsta{
+    text-decoration: none;
+}
+
+#LogoIns{
+    width: 1vw;
+    grid-column: 8/8;
+    grid-row: 6/6;
+    margin-top: 0.1vw;
+}
+
+/* Modelo mobile Footer */
+
+@media screen and (max-width: 767px){
+    #containerRodapeProd{
+    width: 80vw;
+    height: 400px;
+    margin: auto;
+    background-color: #84d6a0;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#LogoM{
+    width: 36vw;
+    height: auto;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    margin-left: 7vw;
+}
+
+.ContTxtRod{
+    width: 100%;
+       height: 20px;
+       /* background-color: aqua; */
+       grid-column: 1/13;
+       grid-row: 3/6;
+       display: flex;
+       justify-content: center;
+   }
+
+
+#LinkInsta{
+    text-decoration: none;
+}
+
+#LogoIns{
+    width: 4vw;
+    grid-column: 7/7;
+    grid-row: 3/4;
+    margin-top: 0.1vw;
+}
+}

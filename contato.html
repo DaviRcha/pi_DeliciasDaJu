@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/layoutContato.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <header>
+        <div id="imglogo">
+            <img id="AjtImg" src="./IMG/logo.png" alt="Logo da marca">
+        </div>
+        <nav id="menu">
+           <a class="AjtMenu" href="./index.html">&nbsp;Sobre &nbsp;</a>|&nbsp
+            <a class="AjtMenu" href="./produtos.html">&nbsp;Produtos &nbsp;</a>|&nbsp
+            <a class="AjtMenuP" href="./personalize.html">&nbsp;Personalize &nbsp;</a>&nbsp
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <section id="banner">
+            <!-- Titulo do banner -->
+            <div id="containerBanner">
+                <h1 id="TituBanner">Bolos</h1>
+            </div>
+        </section>
+
+        <section id="Form">
+            <div id="containerForm">
+
+                    <!-- Titulo entre em contato -->
+                     <h2 id="EntrCont">Entre em Contato</h2>   
+
+                     <!-- Formulario -->
+                      <form id="formContato" method="post" action="URL_DO_SEU_BACKEND">
+
+  <div class="parte1">
+    <!-- <label for="Nome">Nome</label> -->
+    <input id="Nome" type="text" name="nome" placeholder="Nome" required>
+  </div>
+
+  <div class="parte2">
+    <!-- <label for="Email">Email</label> -->
+    <input id="Email" type="email" name="email" placeholder="Email" required>
+  </div>
+
+  <div class="parte3">
+    <!-- <label for="Telefone">Telefone</label> -->
+    <input id="Telefone" type="tel" name="telefone" placeholder="Telefone" required>
+  </div>
+
+  <div class="parte4">
+    <!-- <label for="MsgClie">Mensagem</label> -->
+    <textarea id="MsgClie" name="mensagem" placeholder="Mensagem" required></textarea>
+  </div>
+
+  <button type="submit" id="BotEnv">Enviar</button>
+
+</form>
+            </div>  
+        </section>
+    </main>
+
+    <footer>
+         <div id="containerRodapeProd">
+            <img id="LogoM" src="./IMG/logo.png" alt="Logo da loja">
+            
+            <!-- <h3 id="TxtRodape">Aberto de segunda a sexta |<a id="LinkInsta" href="https://www.instagram.com/d.liciasdaju?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@d.liciasdaju</a></h3> -->
+
+             <Div class="conteTxtFooter">
+                 <h3 id="TxtRodape">Aberto de segunda a sexta |<a id="LinkInsta" href="https://www.instagram.com/d.liciasdaju?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@d.liciasdaju</a></h3>
+            </Div>
+           
+
+            <!-- <a id="LogoIns" href="https://www.instagram.com/d.liciasdaju?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <img id="LogoIns" src="./IMG/LogoIntagram.png" alt="Logo do instagram">
+            </a> -->
+            
+        </div>
+    </footer>
+</body>
+</html>
